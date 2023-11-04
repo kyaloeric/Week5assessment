@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add note</title>
+    <title>Add Note</title>
     <link rel="stylesheet" href="/frontend/style.css">
 </head>
 <body>
@@ -15,37 +15,33 @@
             </div>
         </div>
 
-        
-                
-                    <div class="add-project">
-                        <h2> Note Add</h2>
-                        <div class="add-project-container">
-                            <div class="top-part">
-                                <h3>Note</h3>
-                                <p>-</p>
-            
-                            </div>
-                            <form class="add-proj">
-                                <label for="fname">Note title</label><br>
-                                <input type="text" id="pname" name="pname" value=""><br><br>
-                                <label for="fname">Note content </label><br>
-                                <input type="text" id="pdescr" name="pdescr" value=""><br><br>
-                                <label for="fname">created At</label><br>
-                                <input type="text" id="status" name="status" value=""><br><br>
-                                <div class="buttons">
-                                <button class="button button1">Submit Note</button><br><br>
-                                <button class="button button2">Cancel</button>
+        <div class="add-project">
+            <h2>Note Add</h2>
+            <div class="add-project-container">
 
-                        
+                <div class="top-part">
+                    <h3>Note</h3>
+                    <p>-</p>
+                </div>
+
+                <form class="add-proj">
+                    <label for="title">Note title</label><br>
+                    <input type="text" id="title" name="title" value=""><br><br>
+                    <label for="content">Note content</label><br>
+                    <textarea id="content" name="content" value=""></textarea><br><br>
+
+                    <div class="buttons">
+                        <button id="addNoteButton" class="button button1">Submit Note</button><br><br>
+                        <button class="button button2">Cancel</button>
                     </div>
-                    
-                </form> 
-                
+
+                </form>
             </div>
         </div>
+
+
+
     </main>
-
-
-    
+    <script src="note.js"></script>
 </body>
 </html>
